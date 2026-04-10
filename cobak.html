@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+
+<!-- CATEGORY BUTTON -->
+ <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterKategori('SEMUA')"  class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-50 transition">SEMUA</button>
+                <button onclick="filterKategori('PRAKTIKUMLAB')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-50 transition">PRAKTIKUM LAB</button>
+                <button onclick="filterKategori('EVENTLOMBA')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-50 transition">EVENT & LOMBA</button>
+                <button onclick="filterKategori('KARYASISWA')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-50 transition">KARYA SISWA</button>
+            </div>
+
+
+<!-- GALLERY -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-pink-900" style="background-color: #7F358C;"> 
+
+    <div class="gallery-item PRAKTIKUMLAB relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">PRAKTIKUM LAB 1</div>
+    <div class="gallery-item PRAKTIKUMLAB bg-white p-6 rounded-xl shadow">PRAKTIKUM LAB 2</div>
+
+    <div class="gallery-item EVENTLOMBA relative overflow-hidden rounded-2xl shadow-bg-pink-600md bg-white group cursor-pointer">EVENT 1</div>
+    <div class="gallery-item EVENTLOMBA bg-white p-6 rounded-xl shadow">EVENT 2</div>
+
+    <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">KARYA 1</div>
+    <div class="gallery-item KARYASISWA bg-white p-6 rounded-xl shadow">KARYA 2</div>
+
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-40 gap-30">
+ <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xs">P</div>
+ <footer class="py-12 px-4 bg-slate-900 ">
+        <div class="gallery-item PRAKTIKUMLAB relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/3.jpeg" alt="Suasana Lab" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-300 text-xs font-bold mb-1">PRAKTIKUM LAB</span>
+                        <h3 class="text-white font-bold text-lg">Suasana Belajar Lab 1</h3>
+                        <p class="text-slate-200 text-xs mt-2">Siswa sedang fokus mempelajari logika pemrograman dasar.</p>
+                    </div>
+                </div>
+                </div>
+                 <section id="peluang" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                 <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Full Stack Web Developer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Merancang dan membangun website dari tampilan depan (frontend) hingga logika belakang layar (backend).
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">React</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Laravel</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">NodeJS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+                 </section>
+                
+    </footer>
+    <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" class="rounded-2xl" alt="Coding">
+                </div>
+                </div>
+
+                  <section id="tim-pengajar" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Guru Produktif PPLG</h2>
+                <p class="text-slate-600">Tim pengajar spesialis di bidang Web, Mobile, Game, dan Desain.</p>
+            </div>
+
+                  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div class="teacher-card group">
+                    <div class="teacher-img-container rounded-2xl overflow-hidden mb-4 relative shadow-lg">
+                        <img src="aset/guru/ACHRIYATUL.png" alt="Guru Web" class="teacher-img w-full h-80 object-cover transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="flex gap-3 justify-center text-white">
+                                <a href="https://www.instagram.com/achriyat001?igsh=enphbmVvbTRyNGNv" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold"> ACHRIYATUL</h3>
+                        <p class="text-blue-600 text-sm font-semibold mb-2">Spesialis Database & Backend</p>
+                        <p class="text-slate-500 text-sm line-clamp-2">Ahli dalam SQL dan manajemen server. Mengelola infrastruktur lab dan server sekolah.</p>
+                    </div>
+                </div>
+                  </div>
+        </div>
+                  </section>
+                   <div class="max-w-7xl mx-auto bg-gradient-to-r from-slate-900 to-indigo-700 rounded-3xl p-10 md:p-16 text-white text-center shadow-2xl relative overflow-hidden">
+            <!--div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -ml-32 -mt-32"></div>
+            <!--div class="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mb-32"></div>-->
+                   </div>
+                
+
+
+<!-- SCRIPT -->
+<script>
+function filterKategori(kategori) {
+    const items = document.querySelectorAll('.gallery-item');
+
+    items.forEach(item => {
+        if (kategori === 'SEMUA') {
+            item.style.display = 'block';
+        } else {
+            if (item.classList.contains(kategori)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    });
+}
+</script>
+</html>

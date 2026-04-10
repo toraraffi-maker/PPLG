@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        @keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+}
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div> <img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-10 h-10  rounded-lg flex items-center justify-center text-white font-bold"></div>
+                        <span class="font-bold text-xl tracking-tight">PPLG <span class="text-blue-600">SMKN 1 Banyuwangi</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="Galeri.html" class="hover:text-blue-600 transition">Galeri</a>
+                    <a href="Prospek_Kari.html" class="hover:text-blue-600 transition">Prospek Karir</a>
+                     <a href="Profil_Guru.html" class="hover:text-blue-600 transition">Profil Guru</a>
+                </div>
+                <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <i class="fas fa-arrow-left"></i> Kembali
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Galeri -->
+    <header class="pt-32 pb-12 px-4 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 italic">Tentang <span class="gradient-text">Jurusan PPLG </span></h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">
+                Mengenal lebih dalam Program Keahlian Pengembangan Perangkat Lunak dan GIM di SMK Negeri 1 Banyuwangi. Tempat di mana kreativitas bertemu dengan teknologi.
+            </p>
+        </div>
+    </header>
+
+    <!-- Vision Mission Section -->
+    <section id="visi-misi" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-blue-600 flex items-center gap-3">
+                    <i class="fas fa-bullseye"></i> Visi Kami
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg italic">
+                    "Menjadi program keahlian yang unggul di bidang teknologi perangkat lunak, menghasilkan lulusan yang kompeten, berakhlak mulia, dan mampu bersaing secara global di era industri 4.0."
+                </p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-indigo-600 flex items-center gap-3">
+                    <i class="fas fa-list-check"></i> Misi Kami
+                </h2>
+                <ul class="space-y-4 text-slate-600">
+                    <li class="flex gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span>Menyelenggarakan pendidikan berbasis IT yang relevan dengan kebutuhan industri.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span>Membangun karakter siswa yang disiplin, kreatif, dan inovatif.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                        <span>Menjalin kerjasama strategis dengan perusahaan teknologi nasional dan internasional.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Detail -->
+    <section id="materi" class="py-20 px-4 bg-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center text-white mb-16">
+                <h2 class="text-3xl font-bold mb-4">Struktur Mata Pelajaran</h2>
+                <p class="text-white">Beberapa fokus utama yang dipelajari selama 3 tahun di PPLG.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Year 1 -->
+                <div class="p-8 rounded-2xl border border-slate-200 bg-slate-50 card-hover">
+                    <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Kelas X</span>
+                    <h3 class="text-xl font-bold mt-2 mb-4">Dasar Pemrograman</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Dasar-dasar Algoritma</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Pemrograman C++ / Java</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Desain Grafis Dasar</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Sistem Komputer</li>
+                    </ul>
+                </div>
+                <!-- Year 2 -->
+                <div class="p-8 rounded-2xl border border-blue-200 bg-slate-50 card-hover">
+                    <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Kelas XI</span>
+                    <h3 class="text-xl font-bold mt-2 mb-4">Aplikasi & Basis Data</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Pemrograman Web (PHP/Laravel)</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Pengelolaan Basis Data (SQL)</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Pemrograman Berorientasi Objek</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> UI/UX Design</li>
+                    </ul>
+                </div>
+                <!-- Year 3 -->
+                <div class="p-8 rounded-2xl border border-slate-200 bg-slate-50 card-hover">
+                    <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Kelas XII</span>
+                    <h3 class="text-xl font-bold mt-2 mb-4">Produk Kreatif & GIM</h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Pengembangan Game (Unity)</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Mobile Apps (Flutter)</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Produk Kreatif dan Kewirausahaan</li>
+                        <li><i class="fas fa-chevron-right text-[10px] mr-2 text-blue-400"></i> Proyek Akhir (Portfolio)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Gallery -->
+    <section id="kegiatan" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="text-left">
+                    <h2 class="text-3xl font-bold mb-2 uppercase italic tracking-tight">Galeri <span class="gradient-text"> Kegiatan </span></h2>
+                    <p class="text-slate-600">Keseruan proses belajar dan berkarya di PPLG SKENSABA.</p>
+                </div>
+                
+            </div>
+            
+            <div class="overflow-hidden">
+    <div class="flex gap-4 animate-scroll">
+
+        <!--gambar asli-->
+                <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/karya1.png" alt="Diskusi Proyek" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">Game 2D </p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/lomba.jpeg" alt="Lomba Coding" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">Pameran game </p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/WhatsApp Image 2026-01-29 at 08.40.15.jpeg" alt="Kunjungan Industri" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">kegiatan di LAB</p>
+                    </div>
+                </div>
+                
+                <!--gambar dupikat-->
+                 <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/karya1.png" alt="Diskusi Proyek" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">Game 2D</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/lomba.jpeg" alt="Lomba Coding" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">Pameran game</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl w-96 h-96">
+                    <img src="aset/galeri/WhatsApp Image 2026-01-29 at 08.40.15.jpeg" alt="Kunjungan Industri" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <p class="text-white text-sm font-medium">kegiatan di LAB</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs"></div>
+                <span class="font-bold text-lg text-white">PPLG ESEMKASA</span>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 SMK Negeri 1 Banyuwangi. Dikembangkan oleh Tim IT PPLG.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/pplg.esemkasa_/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body> 
+</html>

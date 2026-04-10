@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .teacher-card {
+            transition: all 0.3s ease;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .teacher-img-container {
+            overflow: hidden;
+        }
+
+        .teacher-card:hover .teacher-img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-10 h-10  rounded-lg flex items-center justify-center text-white font-bold"></div>
+                        <span class="font-bold text-xl tracking-tight uppercase">PPLG <span class="text-blue-600">SMKN 1 Banyuwangi</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="Galeri.html" class="hover:text-blue-600 transition">Galeri</a>
+                    <a href="Prospek_Kari.html" class="hover:text-blue-600 transition">Prospek Karir</a>
+                     <a href="Profil_Guru.html" class="hover:text-blue-600 transition">Profil Guru</a>
+                </div>
+                <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 px-4 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                Bertemu dengan <span class="gradient-text">Mentor Hebat</span> Kami
+            </h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Dibimbing langsung oleh praktisi dan akademisi berpengalaman yang siap mengantar siswa menjadi ahli teknologi masa depan.
+            </p>
+        </div>
+    </header>
+
+    <!-- Kaproli Section (Highlight) -->
+    <section id="kaproli" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 flex flex-col md:flex-row items-center gap-10">
+                <div class="w-full md:w-1/3">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-600 rounded-2xl transform rotate-6 opacity-20"></div>
+                        <img src="aset/guru/RETNO IRES.png" alt="Kepala Program" class="relative rounded-2xl w-full object-cover shadow-lg aspect-[3/4]">
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-xs font-bold uppercase tracking-wider">Kepala Program Keahlian</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 text-slate-900">RETNO IRES, S.Kom., M.T.</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6 italic">
+                        "Visi kami adalah menciptakan lingkungan belajar yang mensimulasikan dunia kerja sesungguhnya. Di PPLG, kami tidak hanya belajar coding, tapi belajar berkarya dan memberi solusi."
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-500 font-bold uppercase">Pendidikan</p>
+                                <p class="text-sm font-bold">Magister Teknik Informatika</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-500 font-bold uppercase">Pengalaman</p>
+                                <p class="text-sm font-bold">15+ Tahun Mengajar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Grid -->
+    <section id="tim-pengajar" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Guru Produktif PPLG</h2>
+                <p class="text-slate-600">Tim pengajar spesialis di bidang Web, Mobile, Game, dan Desain.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Teacher 1 -->
+                <div class="teacher-card group">
+                    <div class="teacher-img-container rounded-2xl overflow-hidden mb-4 relative shadow-lg">
+                        <img src="aset/guru/ACHRIYATUL.png" alt="Guru Web" class="teacher-img w-full h-80 object-cover transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="flex gap-3 justify-center text-white">
+                                <a href="https://www.instagram.com/achriyat001?igsh=enphbmVvbTRyNGNv" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold"> ACHRIYATUL</h3>
+                        <p class="text-blue-600 text-sm font-semibold mb-2">Spesialis Mobile Apps</p>
+                        <p class="text-slate-500 text-sm line-clamp-2">Praktisi Flutter dan Kotlin. Fokus pada pengembangan aplikasi Android yang efisien.</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="teacher-card group">
+                    <div class="teacher-img-container rounded-2xl overflow-hidden mb-4 relative shadow-lg">
+                        <img src="aset/guru/ACHMAD ZAINUN.png" alt="Guru Mobile" class="teacher-img w-full h-80 object-cover transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="flex gap-3 justify-center text-white">
+                                <a href="https://www.instagram.com/achmadzainun46/" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold">ZAINUN</h3>
+                        <p class="text-blue-600 text-sm font-semibold mb-2">Spesialis Game & UI/UX</p>
+                        <p class="text-slate-500 text-sm line-clamp-2">Mengajar Unity 3D dan desain antarmuka. Memiliki background di industri kreatif digital.</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="teacher-card group">
+                    <div class="teacher-img-container rounded-2xl overflow-hidden mb-4 relative shadow-lg">
+                        <img src="aset/guru/MANIK.png" alt="Guru Game" class="teacher-img w-full h-80 object-cover transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="flex gap-3 justify-center text-white">
+                                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-artstation text-lg"></i></a>
+                                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold">MANIK</h3>
+                        <p class="text-blue-600 text-sm font-semibold mb-2">Spesialis Web Development</p>
+                        <p class="text-slate-500 text-sm line-clamp-2">Ahli dalam Framework Laravel dan React JS. Membimbing siswa dalam pembuatan aplikasi berbasis web.</p>
+                    </div>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="teacher-card group">
+                    <div class="teacher-img-container rounded-2xl overflow-hidden mb-4 relative shadow-lg">
+                        <img src="aset/guru/NOVAL.png" alt="Guru Database" class="teacher-img w-full h-80 object-cover transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="flex gap-3 justify-center text-white">
+                                <a href="https://www.instagram.com/cakwien/" class="hover:text-blue-400 transition"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold">NOVAL</h3>
+                        <p class="text-blue-600 text-sm font-semibold mb-2">Spesialis Database & Backend</p>
+                        <p class="text-slate-500 text-sm line-clamp-2">Ahli dalam SQL dan manajemen server. Mengelola infrastruktur lab dan server sekolah.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy --
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto bg-gradient-to-r from-slate-900 to-indigo-700 rounded-3xl p-10 md:p-16 text-white text-center shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -ml-32 -mt-32"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mb-32"></div>
+            
+            <h2 class="text-3xl font-bold mb-6 relative z-10">Filosofi Mengajar Kami</h2>
+            <div class=" grid md:grid-cols-3 gap-8 relative z-10">
+                <div class="teacher-card group p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="font-bold text-xl mb-2">Project Based</h3>
+                    <p class="text-blue-100 text-sm">Belajar dengan mengerjakan proyek nyata, bukan sekadar teori hafalan.</p>
+                </div>
+                <div class="teacher-card group p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-bold text-xl mb-2">Mentoring</h3>
+                    <p class="text-blue-100 text-sm">Hubungan guru-siswa yang dekat layaknya mentor dan junior developer.</p>
+                </div>
+                <div class="teacher-card group p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="font-bold text-xl mb-2">Up to Date</h3>
+                    <p class="text-blue-100 text-sm">Materi yang selalu diperbarui mengikuti perkembangan teknologi industri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs"></div>
+                <span class="font-bold text-lg text-white">PPLG ESEMKASA</span>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 SMK Negeri 1 Banyuwangi. Dikembangkan oleh Tim IT PPLG.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/pplg.esemkasa_/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+   
+    
+
+</body>
+</html>

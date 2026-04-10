@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div> <img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-10 h-10  rounded-lg flex items-center justify-center text-white font-bold "></div>
+                    <span class="font-bold text-xl tracking-tight">PPLG <span class="text-blue-600">SMKN 1 Banyuwangi</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="Galeri.html" class="hover:text-blue-600 transition">Galeri</a>
+                    <a href="Prospek_Kari.html" class="hover:text-blue-600 transition">Prospek Karir</a>
+                     <a href="Profil_Guru.html" class="hover:text-blue-600 transition">Profil Guru</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-32 pb-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-600 uppercase bg-blue-50 rounded-full">
+                    Masa Depan Digital Dimulai Di Sini
+                </span>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Wujudkan Mimpimu Menjadi <span class="gradient-text">Developer Profesional</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Jurusan PPLG SMK Negeri 1 Banyuwangi membekali siswa dengan keahlian coding, pembuatan aplikasi web, mobile, hingga pengembangan game terkini.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="tentang.html" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-blue-200 transition">Pelajari Lebih Lanjut</a>
+                    
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-100 rounded-3xl blur-2xl opacity-50 -z-10"></div>
+                <img src="aset/gambar-_1.png" alt="Siswa PPLG sedang coding" class="rounded-2xl shadow-2xl w-full h-[600px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats --
+    <section class="py-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-1">A+</div>
+                <div class="text-sm text-slate-500 uppercase font-semibold">Akreditasi</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-1">20+</div>
+                <div class="text-sm text-slate-500 uppercase font-semibold">Mitra Industri</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-1">100%</div>
+                <div class="text-sm text-slate-500 uppercase font-semibold">Siap Kerja</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-1">10+</div>
+                <div class="text-sm text-slate-500 uppercase font-semibold">Bahasa Pemrograman</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why PPLG -->
+    <section id="tentang" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 italic text-blue-600">Kenapa Harus PPLG?</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Kami tidak hanya mengajarkan cara menulis kode, tapi cara memecahkan masalah dan membangun solusi digital masa depan.</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm card-hover">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6 text-xl">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Skill Berbasis Industri</h3>
+                <p class="text-slate-600 leading-relaxed">Kurikulum yang diselaraskan dengan kebutuhan industri IT saat ini (Web, Mobile, Cloud).</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm card-hover">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-6 text-xl">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Fasilitas Lab Modern</h3>
+                <p class="text-slate-600 leading-relaxed">Laboratorium komputer dengan spesifikasi tinggi dan koneksi internet super cepat.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm card-hover">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6 text-xl">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Sertifikasi BNSP</h3>
+                <p class="text-slate-600 leading-relaxed">Lulusan dibekali sertifikat kompetensi nasional yang diakui oleh dunia kerja.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section id="kurikulum" class="py-24 px-4 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Apa Saja yang Akan <span class="text-blue-400">Kamu Pelajari?</span></h2>
+                    <p class="text-slate-400 mb-8">PPLG (dulu RPL) berfokus pada pengembangan perangkat lunak secara menyeluruh.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50">
+                            <i class="fab fa-html5 text-orange-500 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Web Development</h4>
+                                <p class="text-xs text-slate-400">HTML, CSS, JavaScript, Laravel, React.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50">
+                            <i class="fas fa-mobile-alt text-blue-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Mobile Apps Development</h4>
+                                <p class="text-xs text-slate-400">Android Studio, Flutter, React Native.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50">
+                            <i class="fas fa-gamepad text-green-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Game Development</h4>
+                                <p class="text-xs text-slate-400">Unity Engine, 2D & 3D Assets.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50">
+                            <i class="fas fa-database text-yellow-400 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold">Database Management</h4>
+                                <p class="text-xs text-slate-400">MySQL, PostgreSQL, MongoDB.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                         <img src="aset/galeri/karya1.png" class="w-full h-48 object-cover rounded-2xl">
+                         <img src="aset/galeri/3.jpeg" class="w-full h-64 object-cover rounded-2xl">
+                        </div>
+                    <div class="pt-8 space-y-4">
+                        <img src="aset/galeri/karya2.png" class="w-full h-64 object-cover rounded-2xl">
+                        <img src="aset/galeri/karya3.png" class="w-full h-48 object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career -->
+    <section id="prospek" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Prospek Karir Masa Depan</h2>
+            <p class="text-slate-600">Lulusan PPLG memiliki peluang kerja yang sangat luas di era digital.</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto ">
+            <div class="p-6 bg-white shadow-2xl rounded-2xl text-center card-hover">
+                <div class="text-4xl mb-4">👨‍💻</div>
+                <h4 class="font-bold">Software Engineer</h4>
+            </div>
+            <div class="p-6 bg-white shadow-2xl rounded-2xl text-center card-hover">
+                <div class="text-4xl mb-4">🌐</div>
+                <h4 class="font-bold">Web Developer</h4>
+            </div>
+            <div class="p-6 bg-white shadow-2xl rounded-2xl text-center card-hover">
+                <div class="text-4xl mb-4">📱</div>
+                <h4 class="font-bold">Mobile Developer</h4>
+            </div>
+            <div class="p-6 bg-white shadow-2xl rounded-2xl text-center card-hover">
+                <div class="text-4xl mb-4">🎮</div>
+                <h4 class="font-bold">Game Developer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section --
+    <section class="py-20 px-4 bg-blue-600 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8">Siap Jadi Bagian dari Keluarga Besar PPLG SMKN 1 Banyuwangi?</h2>
+            <p class="text-xl mb-10 opacity-90">Jangan lewatkan kesempatan untuk menguasai teknologi paling dicari di dunia.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition shadow-lg">Info Pendaftaran (PPDB)</a>
+                <a href="#" class="bg-blue-700 border border-blue-400 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="py-12 px-4 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-8 h-8  rounded-lg flex items-center justify-center text-white font-bold text-xs"></div>
+                <span class="font-bold text-lg text-white">PPLG ESEMKASA</span>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 SMK Negeri 1 Banyuwangi. Dikembangkan oleh Tim IT PPLG.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/pplg.esemkasa_/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

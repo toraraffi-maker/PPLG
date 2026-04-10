@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        
+        .tab-active {
+            background-color: #2563eb;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-10 h-10  rounded-lg flex items-center justify-center text-white font-bold"></div>
+                        <span class="font-bold text-xl tracking-tight uppercase">PPLG <span class="text-blue-600">SMKN 1 Banyuwangi</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="Galeri.html" class="hover:text-blue-600 transition">Galeri</a>
+                    <a href="Prospek_Kari.html" class="hover:text-blue-600 transition">Prospek Karir</a>
+                     <a href="Profil_Guru.html" class="hover:text-blue-600 transition">Profil Guru</a>
+                </div>
+                <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Galeri -->
+    <header class="pt-32 pb-12 px-4 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 italic">Melihat Dunia <span class="gradient-text">PPLG ESEMKASA</span></h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">
+                Dokumentasi perjalanan kreativitas, inovasi, dan kolaborasi siswa-siswi PPLG dalam membangun karya digital.
+            </p>
+        </div>
+    </header>
+
+    <!-- Filter & Gallery Grid -->
+    <section id="koleksi" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterKategori('SEMUA')"  class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 transition">SEMUA</button>
+                <button onclick="filterKategori('PRAKTIKUMLAB')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 transition">PRAKTIKUM LAB</button>
+                <button onclick="filterKategori('EVENTLOMBA')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 transition">EVENT & LOMBA</button>
+                <button onclick="filterKategori('KARYASISWA')" class="px-6 py-2.5 rounded-full text-sm font-bold border border-slate-200 bg-white hover:bg-slate-100 transition">KARYA SISWA</button>
+            </div>
+
+            <!-- Masonry-like Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="gallery-item PRAKTIKUMLAB relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/WhatsApp Image 2026-01-29 at 08.40.15.jpeg" alt="Suasana Lab" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-300 text-xs font-bold mb-1">PRAKTIKUM LAB</span>
+                        <h3 class="text-white font-bold text-lg">Suasana Belajar Lab B9</h3>
+                        <p class="text-slate-200 text-xs mt-2">Siswa sedang fokus mempelajari pembuatan disain web.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                 <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/karya1.png" alt="Game Dev" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-purple-300 text-xs font-bold mb-1">KARYA</span>
+                        <h3 class="text-white font-bold text-lg">Pengembangan Game 2D</h3>
+                        <p class="text-slate-200 text-xs mt-2">Uji coba karakter game hasil karya siswa kelas XII.</p>
+                    </div>
+                </div>
+
+
+                <!-- Item 3 -->
+                 <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/karya2.png" alt="Game Dev" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-purple-300 text-xs font-bold mb-1">KARYA</span>
+                        <h3 class="text-white font-bold text-lg">Pengembangan web </h3>
+                        <p class="text-slate-200 text-xs mt-2">Uji coba karakter web hasil karya siswa kelas X.</p>
+                    </div>
+                </div>
+
+
+                <!-- Item 4 -->
+                <div class="gallery-item EVENTLOMBA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/lomba.jpeg" alt="Kunjungan Industri" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-emerald-300 text-xs font-bold mb-1">EVENT & LOMBA</span>
+                        <h3 class="text-white font-bold text-lg">Kunjungan Industri ke Perusahaan IT</h3>
+                        <p class="text-slate-200 text-xs mt-2">Melihat langsung proses kerja di industri teknologi ternama.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                 <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/karya3.png" alt="Game Dev" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-purple-300 text-xs font-bold mb-1">KARYA</span>
+                        <h3 class="text-white font-bold text-lg">Pengembangan Game 2D</h3>
+                        <p class="text-slate-200 text-xs mt-2">Uji coba karakter game hasil karya siswa kelas XII.</p>
+                    </div>
+                </div>
+
+                <!--item6-->
+                <div class="gallery-item PRAKTIKUMLAB relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/WhatsApp Image 2026-01-29 at 08.40.16.jpeg" alt="Suasana Lab" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-300 text-xs font-bold mb-1">PRAKTIKUM LAB</span>
+                        <h3 class="text-white font-bold text-lg">Suasana Belajar Lab B9</h3>
+                        <p class="text-slate-200 text-xs mt-2">Siswa sedang fokus mempelajari pembuatan disain web.</p>
+                    </div>
+                </div>
+                <!--item7-->
+               <div class="gallery-item EVENTLOMBA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/lomba-3.jpeg" alt="Kunjungan Industri" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-emerald-300 text-xs font-bold mb-1">EVENT & LOMBA</span>
+                        <h3 class="text-white font-bold text-lg">Kunjungan Industri ke Perusahaan IT</h3>
+                        <p class="text-slate-200 text-xs mt-2">Melihat langsung proses kerja di industri teknologi ternama.</p>
+                    </div>
+                </div>
+
+               <!--item8-->
+                <div class="gallery-item PRAKTIKUMLAB relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/3.jpeg" alt="Suasana Lab" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-blue-300 text-xs font-bold mb-1">PRAKTIKUM LAB</span>
+                        <h3 class="text-white font-bold text-lg">Suasana Belajar Lab 1</h3>
+                        <p class="text-slate-200 text-xs mt-2">Siswa sedang fokus mempelajari logika pemrograman dasar.</p>
+                    </div>
+                </div>
+
+                <!--item9-->
+                 <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/kariya-4.png" alt="Game Dev" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-purple-300 text-xs font-bold mb-1">KARYA</span>
+                        <h3 class="text-white font-bold text-lg">Pengembangan web pesona banyuwangi</h3>
+                        <p class="text-slate-200 text-xs mt-2">Uji coba hasil karya siswa kelas X.</p>
+                    </div>
+                </div>
+
+
+                <!--item10-->
+                <div class="gallery-item EVENTLOMBA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="aset/galeri/lomba-2.jpeg" alt="Kunjungan Industri" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-emerald-300 text-xs font-bold mb-1">EVENT & LOMBA</span>
+                        <h3 class="text-white font-bold text-lg">Kunjungan Industri ke Perusahaan IT</h3>
+                        <p class="text-slate-200 text-xs mt-2">Melihat langsung proses kerja di industri teknologi ternama.</p>
+                    </div>
+                </div>
+
+                <!--item11--
+                 <div class="gallery-item KARYASISWA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800" alt="Game Dev" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-purple-300 text-xs font-bold mb-1">KARYA</span>
+                        <h3 class="text-white font-bold text-lg">Pengembangan Game 3D</h3>
+                        <p class="text-slate-200 text-xs mt-2">Uji coba karakter game hasil karya siswa kelas XII.</p>
+                    </div>
+                </div>
+
+                <!--item12--
+                <div class="gallery-item EVENTLOMBA relative overflow-hidden rounded-2xl shadow-md bg-white group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200" alt="Kunjungan Industri" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-emerald-300 text-xs font-bold mb-1">EVENT & LOMBA</span>
+                        <h3 class="text-white font-bold text-lg">Kunjungan Industri ke Perusahaan IT</h3>
+                        <p class="text-slate-200 text-xs mt-2">Melihat langsung proses kerja di industri teknologi ternama.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <!-- More Button --
+            <div class="text-center mt-16">
+                <button class="px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                    Lihat Koleksi Lainnya <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+        </div><!---->
+    </section>
+
+    <!-- Join Section --
+    <section class="py-20 px-4 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 blur-3xl rounded-full -mr-32 -mt-32"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl font-bold mb-6 italic">Ingin Foto Kamu Ada di Sini Juga?</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">Daftar sekarang dan jadilah bagian dari generasi digital berbakat SMK Negeri 1 Banyuwangi.</p>
+            <a href="pplg_skensaba.html#beranda" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition">Ayo Gabung Sekarang!</a>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="py-12 px-4 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-8 h-8  rounded-lg flex items-center justify-center text-white font-bold text-xs"></div>
+                <span class="font-bold text-lg text-white">PPLG ESEMKASA</span>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 SMK Negeri 1 Banyuwangi. Dikembangkan oleh Tim IT PPLG.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/pplg.esemkasa_/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+     <script>
+function filterKategori(kategori) {
+    const items = document.querySelectorAll('.gallery-item');
+
+    items.forEach(item => {
+        if (kategori === 'SEMUA') {
+            item.style.display = 'block';
+        } else {
+            if (item.classList.contains(kategori)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    });
+}
+</script>
+</body>
+</html>

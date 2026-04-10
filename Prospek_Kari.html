@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPLG - SMK Negeri 1 Banyuwangi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+        }
+
+        .icon-box {
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div> <img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-10 h-10  rounded-lg flex items-center justify-center text-white font-bold"></div>
+                        <span class="font-bold text-xl tracking-tight uppercase">PPLG <span class="text-blue-600">SMKN 1 Banyuwangi</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="Galeri.html" class="hover:text-blue-600 transition">Galeri</a>
+                    <a href="Prospek_Kari.html" class="hover:text-blue-600 transition">Prospek Karir</a>
+                     <a href="Profil_Guru.html" class="hover:text-blue-600 transition">Profil Guru</a>
+                </div>
+                <a href="index.html" class="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                    <i class="fas fa-home"></i> Beranda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 px-4 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                Masa Depan Cerah di <span class="gradient-text">Industri Digital</span>
+            </h1>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Keahlian coding adalah "superpower" di era modern. Temukan berbagai jalur karir menjanjikan yang menanti lulusan PPLG.
+            </p>
+        </div>
+    </header>
+
+    <!-- Career Paths Grid -->
+    <section id="peluang" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Web Developer -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Full Stack Web Developer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Merancang dan membangun website dari tampilan depan (frontend) hingga logika belakang layar (backend).
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">React</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Laravel</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">NodeJS</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Mobile Developer -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobile App Developer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Membuat aplikasi untuk smartphone Android maupun iOS yang digunakan jutaan orang setiap hari.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Flutter</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Kotlin</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Swift</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Game Developer -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Game Developer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Mengembangkan logika permainan, mekanik, dan dunia virtual yang interaktif dan menyenangkan.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Unity</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">C#</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Blender</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: UI/UX Designer -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-pink-500 text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Designer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Merancang tampilan aplikasi yang cantik (UI) dan mudah digunakan (UX) sebelum mulai diprogram.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Figma</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Adobe XD</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Wireframe</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Freelancer -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-orange-500 text-2xl mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Digital Freelancer</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Bekerja mandiri menerima proyek dari klien lokal maupun internasional dengan waktu kerja fleksibel.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Remote</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Upwork</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Fiverr</span>
+                    </div>
+                </div>
+
+                <!-- Card 6: IT Support / DevOps -->
+                <div class="career-card bg-white p-8 rounded-2xl border border-slate-100 shadow-sm transition-all duration-300 group">
+                    <div class="w-14 h-14 icon-box rounded-xl flex items-center justify-center text-cyan-600 text-2xl mb-6 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">IT Support & DevOps</h3>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Memastikan sistem, server, dan jaringan perusahaan berjalan lancar tanpa gangguan.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Linux</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Cloud</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-500 text-[10px] rounded font-bold uppercase">Maintenance</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Salary & Data Section --
+    <section class="py-20 px-4 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                 <div class="absolute -inset-4 bg-indigo-100 rounded-3xl blur-2xl opacity-50 -z-10"></div>
+                 <img src="aset/galeri/lomba-3.jpeg" alt="Working Environment" class="rounded-2xl shadow-xl w-full">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Industri Membutuhkan <span class="text-blue-600">Ribuan Talenta Digital</span></h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Setiap tahun, permintaan akan tenaga kerja di bidang teknologi terus meningkat. Ini adalah kesempatan emas bagi lulusan SMK yang memiliki skill siap pakai.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Gaji Kompetitif</h4>
+                            <p class="text-sm text-slate-500">Standar gaji bidang IT cenderung lebih tinggi dibanding sektor lain.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">2</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Kerja Remote</h4>
+                            <p class="text-sm text-slate-500">Banyak perusahaan IT mengizinkan karyawan bekerja dari rumah (WFH).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">3</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Jenjang Karir Jelas</h4>
+                            <p class="text-sm text-slate-500">Dari Junior, Senior, hingga Tech Lead dengan jalur promosi yang jelas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Section --
+    <section class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Kata Alumni Kami</h2>
+            <p class="text-slate-400">Mereka yang telah sukses meniti karir setelah lulus dari PPLG Skensaba.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div class="bg-slate-800 p-8 rounded-2xl relative">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="text-slate-300 italic mb-6 mt-4">"Ilmu coding dari sekolah sangat terpakai. Sekarang saya bekerja remote untuk perusahaan di Jakarta."</p>
+                <h4 class="font-bold text-blue-400">Rizky Pratama</h4>
+                <span class="text-xs text-slate-500 uppercase font-bold">Frontend Dev @ Startup Unicorn</span>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-2xl relative">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="text-slate-300 italic mb-6 mt-4">"Awalnya ragu, tapi berkat bimbingan guru PPLG, saya bisa bikin game sendiri dan publish di Playstore."</p>
+                <h4 class="font-bold text-blue-400">Siti Nurhaliza</h4>
+                <span class="text-xs text-slate-500 uppercase font-bold">Indie Game Developer</span>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-2xl relative">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-xl font-bold">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="text-slate-300 italic mb-6 mt-4">"Skill analisis data yang diajarkan sangat membantu saya dalam mengelola database perusahaan."</p>
+                <h4 class="font-bold text-blue-400">Ahmad Fauzi</h4>
+                <span class="text-xs text-slate-500 uppercase font-bold">Database Administrator</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-slate-900 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div><img src="aset/logo-jurusan_1748687664_logo_pplg_baru_11zon.png" class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs"></div>
+                <span class="font-bold text-lg text-white">PPLG ESEMKASA</span>
+            </div>
+            <div class="text-sm">
+                &copy; 2026 SMK Negeri 1 Banyuwangi. Dikembangkan oleh Tim IT PPLG.
+            </div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/pplg.esemkasa_/" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
